@@ -1,5 +1,6 @@
 <h1>주문을 합시다</h1>
 
+
 <form action="home/order" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   이    름 : <input type="text" name="name"><br>
@@ -11,5 +12,7 @@
   <input type="radio" name="drink" value="사이다">사이다<br>
   사이즈 업 : <input type="checkbox" name="size_up"><br>
   <input type="submit" value="제출">
+
+</form>
 
 </form>

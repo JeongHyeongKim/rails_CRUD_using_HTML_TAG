@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
   def index
   end
-    def order
+
+  def order
     @person=params[:name]
     @orders=params[:product]
     @set=params[:set]
@@ -10,6 +11,10 @@ class HomeController < ApplicationController
     @test="test"
     @asdf=1
 
+    @name=params[:name]
+
+
   end
+
 
 end
