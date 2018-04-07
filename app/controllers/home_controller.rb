@@ -13,7 +13,6 @@ class HomeController < ApplicationController
 
     @name=params[:name]
 
-
   end
 
 
