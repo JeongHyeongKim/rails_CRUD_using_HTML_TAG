@@ -1,0 +1,17 @@
+<h1>주문이 밀렸다! 빨리 만들어내라</h1>
+
+
+<%@posts.each do |x| %>
+  <br>I   D : <%=x.id%>번째 주문<br>
+  이   름 : <%=x.name%> <br>
+  제   품 : <%=x.product%> <br>
+  세   트 : <%=x.set%> <br>
+  음   료 : <%=x.drink%> <br>
+  사이즈업 : <%=x.size_up%> <br>
+  기   타 : <%=x.etc%> <br>
+  <a href="/home/destroy_one/<%=x.id%>">해당 주문 완료</a><br>
+  ============================<br>
+<%end%>
+
+<a href="/home/index/">주문화면</a><br>
+<a href="/home/destroy_all">전체삭제</a><br>
