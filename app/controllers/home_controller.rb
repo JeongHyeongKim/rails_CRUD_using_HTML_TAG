@@ -36,6 +36,21 @@ class HomeController < ApplicationController
     redirect_to '/home/list'
   end
 
+  def edit
+    @post=Post.find(params[:post_id])
+  end
+  def update
+    @post=Post.find(params[:post_id])
+    @post.name=params[:name]
+    @post.product=params[:product]
+    @post.set=params[:set]
+    @post.drink=params[:drink]
+    @post.size_up=params[:size_up]
+    @post.etc=params[:etc]
+    @post.save
+    redirect_to '/home/list'
+  end
+
 
 
 end
